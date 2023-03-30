@@ -1,6 +1,6 @@
 # Desarrollo de Sistemas Informáticos 
 
-## Práctica PE 09. Objects, classes, interfaces 
+## Práctica PE 09. Template Method
 ## Author: Kevin Salcedo
 ## Date: 30/03/2023
 
