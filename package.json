@@ -7,7 +7,7 @@
     "start": "tsc-watch --onSuccess \"node dist/index.js\"",
     "doc": "typedoc",
     "test": "mocha",
-    "coverage": "nyc npm test && nyc report --reporter-text-lcov"
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls && rm -rf .nyc_output"
   },
   "keywords": [],
   "author": "",
@@ -15,9 +15,11 @@
   "devDependencies": {
     "@types/chai": "^4.3.4",
     "@types/mocha": "^10.0.1",
+    "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@typescript-eslint/parser": "^5.54.1",
     "chai": "^4.3.7",
+    "coverage": "^0.4.1",
     "coveralls": "^3.1.1",
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.7.0",
