@@ -6,7 +6,8 @@
   "scripts": {
     "start": "tsc-watch --onSuccess \"node dist/index.js\"",
     "doc": "typedoc",
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "nyc npm test && nyc report --reporter-text-lcov"
   },
   "keywords": [],
   "author": "",
@@ -17,12 +18,15 @@
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@typescript-eslint/parser": "^5.54.1",
     "chai": "^4.3.7",
+    "coveralls": "^3.1.1",
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.7.0",
     "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
     "prettier": "^2.8.4",
     "ts-node": "^10.9.1",
     "tsc-watch": "^6.0.0",
-    "typedoc": "^0.24.0-beta.2"
+    "typedoc": "^0.24.0-beta.2",
+    "typescript": "^5.0.2"
   }
 }
